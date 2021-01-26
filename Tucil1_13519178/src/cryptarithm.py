@@ -1,9 +1,5 @@
 import time
 
-letterList = []
-words = []
-solusi = []
-
 def solveManual(copyWords, letterToNum, trial, solusi):
     if(all([int(letterToNum[z[0]]) != 0 for z in copyWords])):
         for i in range(0,len(copyWords)):
@@ -53,7 +49,7 @@ def solver(words, letterList, solusi, tipe, outFile = None):
                         solveExternal(copyWords, letterToNum, z, solusi, outFile)
                     
         elif(len(letterList) <= 10):
-            numList = [1, 0, 2, 3, 4, 5, 6, 7, 8, 9]
+            numList = [0, 9, 8, 7, 6, 5, 4, 3, 2, 1]
             for z in range(1, 3265920):
                 max = 0
                 for i in range(0, 9):
@@ -88,6 +84,9 @@ def solver(words, letterList, solusi, tipe, outFile = None):
         print("Waktu yang diperlukan adalah " + str(end - start) + " detik")
 
 while(True):
+    letterList = []
+    words = []
+    solusi = []
     print("--------------")
     print("--------------")
     print("Selamat datang di cryptarithm solver")
@@ -167,3 +166,8 @@ while(True):
         solver(words, letterList, solusi, tipe, outF)
         outF.close()
         inF.close()
+
+    letterList.clear()
+    solusi.clear()
+    solusi.clear()
+
