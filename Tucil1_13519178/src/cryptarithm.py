@@ -170,4 +170,3 @@ while(True):
     letterList.clear()
     solusi.clear()
     solusi.clear()
-
