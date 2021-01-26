@@ -18,7 +18,7 @@ Masukan juga bisa ditulis melalui file eksternal yang berformat .txt. dan hasiln
 SEND
 MORE+
 -----
-MONEY
+MONEY(\n)
 
 ```
 
